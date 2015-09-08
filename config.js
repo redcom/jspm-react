@@ -1,31 +1,26 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "/",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "blacklist": [],
     "stage": 0,
     "optional": [
       "strict"
     ]
   },
-  "paths": {
-    "*": "*.js",
+  paths: {
     "app/*": "lib/*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
-});
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "alt": "npm:alt@0.17.0-alpha1",
     "babel": "npm:babel-core@5.5.4",
     "babel-runtime": "npm:babel-runtime@5.5.4",
-    "bootstrap": "github:twbs/bootstrap@3.3.4",
     "core-js": "npm:core-js@0.9.14",
     "events": "npm:events@1.0.2",
-    //"flux": "npm:flux@2.0.3",
-    //"goatslacker/alt": "github:goatslacker/alt@0.16.10",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
     "keymirror": "npm:keymirror@0.1.1",
     "object-assign": "npm:object-assign@3.0.0",
@@ -379,10 +374,8 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "isarray": "npm:isarray@0.0.1",
       "process": "github:jspm/nodelibs-process@0.1.1",
-      "stream": "github:jspm/nodelibs-stream@0.1.0",
       "stream-browserify": "npm:stream-browserify@1.0.0",
-      "string_decoder": "npm:string_decoder@0.10.31",
-      "util": "github:jspm/nodelibs-util@0.1.0"
+      "string_decoder": "npm:string_decoder@0.10.31"
     },
     "npm:recast@0.9.18": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -446,4 +439,3 @@ System.config({
     }
   }
 });
-
